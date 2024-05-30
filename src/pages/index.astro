@@ -6,40 +6,53 @@ import Card from '../components/Card.astro';
 <Layout title="Welcome to Astro.">
   <div class="icon-row">
     <div class="icon">
-      <img src="icon1.png" alt="Icon 1" />
-      <span class="icon-text">Processing</span>
+    <a href="/" class="menu-logo">
+        <img src="/icons/Proc_Founda.svg" alt="Processing Foundation" />
+        <span class="icon-text">Processing Foundation</span>
+    </a>
     </div>
     <div class="icon">
-      <img src="icon2.png" alt="Icon 2" />
-      <span class="icon-text">Processing Foundation</span>
+        <a href="/processing" class="menu-logo">
+            <img src="/icons/Proc_chiquito.svg" alt="Processing" />
+            <span class="icon-text">Processing </span>
+        </a>
     </div>
     <div class="icon">
-      <img src="icon3.png" alt="Icon 3" />
-      <span class="icon-text">p5.js</span>
+        <a href="/p5js" class="menu-logo">
+        <img src="/icons/p5.svg" alt="p5.js" />
+        <span class="icon-text">p5.js</span>
+        </a>
     </div>
     <div class="icon">
-      <img src="icon4.png" alt="Icon 4" />
+        <a href="/android" class="menu-logo">
+        <img src="/icons/proc_andro.svg" alt="Processing Android" />
       <span class="icon-text">Processing Android</span>
     </div>
     <div class="icon">
-      <img src="icon5.png" alt="Icon 5" />
+        <a href="/python" class="menu-logo">
+            <img src="/icons/proc_pytho.svg" alt="Processing Python" />      
       <span class="icon-text">Processing Python</span>
     </div>
-    <!-- Agrega más imágenes de iconos aquí -->
+    
   </div>
-  
   <header class="custom-header">
-    <div class="logo">Logo</div>
-    <nav class="menu">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">Blog</a>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
+    <div class="menu-row">
+        <img src="/icons/Proc_grande.svg" alt="Processing" />
+        <span class="icon-text-iconogrande">Processing</span>
+       
+        <a href="https://processing.org/download" class="menu-item">Download</a>
+        <a href="https://processing.org/documentation" class="menu-item">Documentation</a>
+        <a href="https://processing.org/learn" class="menu-item">Learn</a>
+        <a href="https://processing.org/Teach" class="menu-item">Teach</a>
+        <a href="https://processing.org/about" class="menu-item">About</a>
+        <a href="https://processing.org/donate" class="menu-item">Donate</a>
+      </div>
     </nav>
     <div class="search-bar">
-      <input type="text" placeholder="Search" />
-      <img src="search-icon.png" alt="Search Icon" />
+        <input type="search" placeholder="Search" />
+        <button type="submit">
+        <img src="/icons/lupa.svg" alt="Search" />
+        </button>
     </div>
   </header>
   
@@ -64,17 +77,17 @@ import Card from '../components/Card.astro';
 
   .icon-text {
     font-size: 14px;
-    color: #333;
+    color: #1904fd;
   }
 
-  /* Estilos para el header personalizado */
+ 
   .custom-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-    background-color: #333;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
   }
 
   .logo {
@@ -93,20 +106,24 @@ import Card from '../components/Card.astro';
   }
 
   .search-bar {
-    display: flex;
-    align-items: center;
-    background-color: #555;
-    padding: 0.5rem;
-    border-radius: 4px;
-  }
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0; 
+  padding: 0.5rem;
+  border-radius: 4px;
+}
 
-  .search-bar input {
-    border: none;
-    background-color: transparent;
-    color: white;
-    margin-right: 0.5rem;
-  }
+.search-bar input {
+  border: 2px solid #dcdcdc; 
+  color: #333; 
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem; 
+  width: 100%; 
 
+ .search-bar i {
+  color: #333; 
+  margin-right: 0.5rem;
+  }
   .search-bar img {
     width: 16px;
     height: 16px;
